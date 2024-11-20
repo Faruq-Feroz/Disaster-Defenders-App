@@ -1,15 +1,21 @@
 import styles from "./Footer.module.scss";
-import { FaLinkedin } from "react-icons/fa";
+
 
 function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={styles.footer}>
-      <p className={styles.info}>Developed by: <span className={styles.myName}>Hassan Faruq</span></p>
+      <p className={styles.info}>
+        Developed by: <span className={styles.myName}>Hassan Faruq </span>
+      </p> 
+      
+      <p className={styles.info}>
+        Designed by: <span className={styles.designers}>Byron and Christine</span>
+      </p>
       <p>
         <sup>&#169; </sup>
-        {currentYear} 
+        {currentYear}
       </p>
       <div className={styles.links}>
         <a
@@ -18,10 +24,8 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin />
+         
         </a>
-      
-       
       </div>
     </footer>
   );
