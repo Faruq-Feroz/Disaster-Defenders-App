@@ -1,20 +1,11 @@
-import { Suspense, lazy } from "react";
-import loadingSvg from "../../src/assets/loading-spinner.Svg";
-
-const Today = lazy(() => import("../components/today/Today"));
-const Highlights = lazy(() => import("../components/highlights/Highlights"));
-
-function Loading() {
-  return <img src={loadingSvg} alt="Loading..." />;
-}
+import Highlights from "../components/highlights/Highlights";
+import Today from "../components/today/Today";
 
 function MainPage() {
   return (
     <div>
-      <Suspense fallback={<Loading />}>
-        <Highlights />
-        <Today />
-      </Suspense>
+      <Highlights />
+      <Today />
     </div>
   );
 }
