@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -9,7 +10,7 @@ footer {
 }
 
 footer p {
-  margin: 0 10px;
+  margin: 5px 0; /* Add some spacing between lines */
 }
 
 .info {
@@ -20,6 +21,12 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   color: #eb6e4b;
+}
+
+.designers {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2196f3; /* Green for differentiation */
 }
 
 .links a {
@@ -34,8 +41,8 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-footer sup {
-  font-size: 1.3em; 
-  vertical-align: baseline; 
-}
 
+footer sup {
+  font-size: 1.3em;
+  vertical-align: baseline;
+}
