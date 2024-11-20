@@ -1,0 +1,41 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0 10px;
+}
+
+.info {
+  font-weight: 600;
+}
+
+.myName {
+  font-size: 18px;
+  font-weight: bold;
+  color: #eb6e4b;
+}
+
+.links a {
+  color: #2196f3;
+  padding: 0 10px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer sup {
+  font-size: 1.3em; 
+  vertical-align: baseline; 
+}
+

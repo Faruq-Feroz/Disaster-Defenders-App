@@ -1,0 +1,86 @@
+:root {
+  --main-bg-color: #f5f0ff; 
+  --boxes-colors: #d7d4d4; 
+  --main-text-color: #6a1b9a; 
+  --sec-text-color: #ff6600; 
+}
+
+.currentWeather {
+  background-color: var(--main-bg-color);
+  padding: 40px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.currentWeather .card {
+  background-color: var(--boxes-colors);
+  color: var(--main-text-color);
+  border-radius: 30px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.currentWeather .card h2 {
+  font-size: 24px;
+  color: var(--main-text-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.currentWeather .card .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.currentWeather .card .wrapper span {
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.currentWeather .card .wrapper img {
+  width: 110px;
+  height: auto;
+}
+
+.currentWeather .card .wState {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--sec-text-color);
+  color: var(--sec-text-color);
+}
+
+.currentWeather .card .metaList {
+  margin-top: 30px;
+}
+
+.currentWeather .card .metaList .metaItem {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.currentWeather .card .metaList .metaItem svg {
+  font-size: 1.5rem;
+  color: var(--sec-text-color); 
+}
+
+.currentWeather .card .metaList .metaItem p {
+  font-size: 0.95rem;
+  color: var(--main-text-color);
+}
+
+.currentWeather .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}

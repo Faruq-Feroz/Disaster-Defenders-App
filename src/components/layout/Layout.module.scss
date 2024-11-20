@@ -1,0 +1,74 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.main {
+  flex: 2; 
+  margin-left: 200px; 
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 35px;
+  margin-bottom: 50px;
+  padding-left: 20px; 
+  background-color: #f6f6f6; 
+}
+
+
+.leftContent,
+.rightContent {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 992px) {
+  .contentWrapper {
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    display: none; 
+  }
+
+  .main {
+    margin-left: 0; 
+    grid-template-columns: 1fr; 
+    padding-left: 0;
+  }
+}
+
+.breadcrumb {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.backToHomeButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.backToHomeButton:hover {
+  background-color: #0056b3;
+}
