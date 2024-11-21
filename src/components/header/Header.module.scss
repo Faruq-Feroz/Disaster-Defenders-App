@@ -17,17 +17,17 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 362px) {
+@media (min-width: 200px) and (max-width: 362px) {
   .header {
     position: relative;
     top: 30px;
-    right: 40px !important;
+    right: 75px !important;
   }
   .logo .image {
     width: 5rem !important;
     position: relative;
-    left: 20px !important;
-    bottom: 40px;
+    left: 46px !important;
+    bottom: 47px;
   }
 }
 
