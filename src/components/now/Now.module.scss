@@ -23,6 +23,51 @@
   text-align: center;
 }
 
+@media (max-width:768px){
+  .currentWeather .card {
+    background-color: var(--boxes-colors);
+    color: var(--main-text-color);
+    border-radius: 30px;
+    padding: 30px;
+    width: 84%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+   
+  }
+}
+
+@media (min-width: 482px) and (max-width: 726px) {
+  .currentWeather .card {
+    background-color: var(--boxes-colors);
+    color: var(--main-text-color);
+    border-radius: 30px;
+    padding: 30px;
+    width: 84%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    right: 180px;
+    
+  }
+}
+@media (min-width: 482px) and (max-width: 560px){
+  .currentWeather .card {
+    position: relative;
+    right: 260px;
+  }
+}
+@media (min-width: 270px) and (max-width: 330px){
+  .currentWeather .card {
+    position: relative;
+    right: 30px;
+    padding: 40px;
+    width: 70%;
+  }
+}
+
+
 .currentWeather .card h2 {
   font-size: 24px;
   color: var(--main-text-color);
