@@ -9,9 +9,28 @@
 @media (max-width:768px){
   .header {
     position: relative;
+    top: 30px;
     right: 20px !important;
   }
+  .logo .image {
+    width: 4rem !important;
+  }
 }
+
+@media (min-width: 300px) and (max-width: 362px) {
+  .header {
+    position: relative;
+    top: 30px;
+    right: 40px !important;
+  }
+  .logo .image {
+    width: 5rem !important;
+    position: relative;
+    left: 20px !important;
+    bottom: 40px;
+  }
+}
+
 
 .logo {
   display: flex;
@@ -24,6 +43,35 @@
 
 .logo .image {
   width: 8rem;
+}
+@media (min-width: 280px) and (max-width: 500px){
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-text-color);
+    gap: 1px;
+    position: relative;
+    left: 20px;
+  }
+  
+  .logo .image {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 506px) and (max-width: 768px){
+  .logo {
+  
+    position: relative;
+    left: 50px;
+  }
+  
+  .logo .image {
+    width: 8rem;
+  }
 }
 
 .logo .heading {
@@ -135,6 +183,14 @@
   cursor: pointer;
 }
 
+@media (min-width: 234px) and (max-width: 360px) {
+  .headerActions .btn{
+    font-size: 4px;
+    width: 60px;
+    height: 20px;
+  }
+}
+
 .headerActions .btn:hover {
   box-shadow: 0 0 8px #2196f3;
 }
@@ -237,6 +293,20 @@
   margin-left: 10px;
   position: relative;
   transition: color 0.3s ease;
+}
+
+@media (min-width: 10px) and (max-width: 370px){
+  .iconButton {
+    background: none;
+    border: none;
+    color: var(--main-text-color);
+    font-size: 1.0rem;
+    cursor: pointer;
+    margin-left: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
 }
 
 .iconButton:hover {
