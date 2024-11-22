@@ -36,7 +36,7 @@ function Forecast() {
             />
             <span>{parseInt(item.forecastItem.main.temp_max)}°c</span>
             <p className={styles.label}>{item.formattedDate}</p>
-            <p className={styles.label}>{item.dayName}</p>
+            
           </div>
         ))}
       </div>
