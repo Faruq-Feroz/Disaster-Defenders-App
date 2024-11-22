@@ -10,6 +10,17 @@
   padding: 30px 20px;
 }
 
+@media (max-width:482px){
+ 
+
+  .forecast .card .label{
+   
+    position: relative;
+    right: 76px;
+  }
+}
+
+
 .forecast .card {
   display: flex;
   justify-content: space-between;
