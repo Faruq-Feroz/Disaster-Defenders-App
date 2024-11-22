@@ -300,6 +300,56 @@ text-align: center;
     margin-bottom: 10px;
   }
 
+  .introduction p{
+    text-align: center;
+    color: rgb(83, 81, 81);
+    font-size: 1rem;
+    width: 310px;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 353px){
+    .checklist-card {
+      padding: 20px; 
+      text-align: center;
+      font-size: 0.8rem; 
+      width: 276px !important; 
+      position: relative;
+      
+      right: 30px;
+      cursor: pointer; 
+    }
+    .introduction h1{
+      color: #007bff;
+      font-size: 1.6rem;
+      text-align: start;
+      }
+
+  }
+  @media(max-width:374px){
+    .introduction p{
+      text-align: start;
+      color: rgb(83, 81, 81);
+      font-size: 0.9rem;
+      position: relative;
+      right: 10px;
+    }
+
+  }
+
+  @media (min-width:354px) and (max-width: 386px){
+    .checklist-card {
+      padding: 20px; 
+      text-align: center;
+      font-size: 0.8rem; 
+      width: 320px !important; 
+      position: relative;
+      
+      right: 13px;
+      cursor: pointer; 
+    }
+  }
+
   .checklist h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -329,6 +379,18 @@ text-align: center;
   margin: 5px 0;
   color: #555;
   line-height: 1.5;
+}
+@media (max-width:385px){
+
+  .tips p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    width: 310px;
+    display: flex;
+    text-align: start;
+    color: #555;
+    line-height: 1.5;
+  }
 }
 
 .response-grid {
@@ -452,6 +514,18 @@ font-weight: 600;
   }
 }
 
+@media (max-width:768px){
+  .response-header h1 {
+    font-size: 2.0rem;
+    color: #007bff;
+  }
+  
+  .response-header p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
+
 /* Map container */
 .map-container {
   width: 100%;
@@ -495,6 +569,28 @@ form {
   border: 6px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (min-width:200px) and (max-width:300px){
+  .form-container{
+    width: 300px !important;
+position: relative;
+right: 30px;
+  } 
+}
+
+@media (min-width:300px) and (max-width:327px){
+  .form-container{
+    width: 330px !important;
+position: relative;
+right: 30px;
+  } 
+}
+
+@media (min-width:327px) and (max-width:427px){
+  .form-container{
+    width: 310px !important;
+right: 30px;
+  }
 }
 
 form label {
@@ -734,6 +830,8 @@ font-size: 15px;
     flex-wrap: wrap;
     gap: 10px;
   }
+
+  
 }
 
 
